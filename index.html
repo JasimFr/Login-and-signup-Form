@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="full-body">
+		<div class="full-box">
+			<div class="button_box">
+				<div id="btn"></div>
+				<button type="button" class="toggle_btn" onclick="login()">Login</button>
+				<button type="button" class="toggle_btn" onclick="reg()">sign Up</button>
+			</div>
+			<hr>
+			<form action="" id="login" class="input_group">
+				<input type="text" class="input_field" placeholder="User Name" required>
+				<input type="password" class="input_field" placeholder="Enter your password" required>
+				<input type="checkbox" class="check_box"> <span>Remember me</span>
+				<button type="submit" class="submit_btn"> Log In</button>
+			</form>
+			<form action="" id="reg" class="input_group">
+				<input type="text" class="input_field" placeholder="User Name" required>
+				<input type="email" class="input_field" placeholder="type your email" required>
+				<input type="password" class="input_field" placeholder="Enter your password" required>
+				<input type="checkbox" class="check_box"> <span>I agree with the condition</span>
+				<button type="submit" class="submit_btn"> Sign Up</button>
+			</form>
+
+		</div>
+	</div>
+	
+<script>
+	var a = document.getElementById('login');
+	var b = document.getElementById('reg');
+	var c = document.getElementById('btn');
+
+	function reg(){
+		a.style.left ="-400px";
+		b.style.left ="10px";
+		c.style.left ="110px";
+
+	}
+	function login(){
+		a.style.left ="10px";
+		b.style.left ="450px";
+		c.style.left ="0px";
+
+	}
+
+</script>
+
+</body>
+</html>
